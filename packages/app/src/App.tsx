@@ -2,24 +2,37 @@ import { createApp } from '@backstage/frontend-defaults';
 import catalogPlugin from '@backstage/plugin-catalog/alpha';
 import { navModule } from './modules/nav';
 import { homeModule } from './modules/home';
-import { githubAuthApiRef } from '@backstage/core-plugin-api';
-import { SignInPage } from '@backstage/core-components';
 
+import { githubAuthApiRef } from '@backstage/core-plugin-api';
+import { SignInPageBlueprint } from '@backstage/plugin-app-react';
+import { SignInPage } from '@backstage/core-components';
+import { createFrontendModule } from '@backstage/frontend-plugin-api';
+
+const signInPage = SignInPageBlueprint.make({
+  params: {
+    loader: async () => props =>
+      (
+        <SignInPage
+          {...props}
+          provider={{
+            id: 'github-auth-provider',
+            title: 'GitHub',
+            message: 'Sign in using GitHub',
+            apiRef: githubAuthApiRef,
+          }}
+        />
+      ),
+  },
+});
 
 export default createApp({
-  features: [catalogPlugin, navModule, homeModule],
-  components: {
-    SignInPage: props => (
-      <SignInPage
-        {...props}
-        auto
-        provider={[{
-          id: 'github-auth-provider',
-          title: 'GitHub',
-          message: 'Sign in to access the Developer Portal',
-          apiRef: githubAuthApiRef,
-        }]}
-      />
-    ),
-  },
+  features: [
+    catalogPlugin,
+    navModule,
+    homeModule,
+    createFrontendModule({
+      pluginId: 'app',
+      extensions: [signInPage],
+    }),
+  ],
 });
