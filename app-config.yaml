@@ -217,6 +217,9 @@ catalog:
       target: ../../org-data.yaml
       rules:
         - allow: [User, Group]
+    - type: url
+      target: https://github.com/wikimatze/carved-rock-fitness-gym/blob/main/catalog-info.yaml
+
 
     ## Uncomment these lines to add more example data
     # - type: url
