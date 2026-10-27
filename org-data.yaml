@@ -1,5 +1,6 @@
 # org-data.yaml
 ---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-group
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
@@ -9,12 +10,11 @@ spec:
   type: team
   children: []
 ---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-user
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
-  name: Matthias Bla
+  name: wikimatze
 spec:
-  profile:
-    displayName: Jane Doe
-    email: jane.doe@company.com
-  memberOf: [payment-squad]
+  memberOf: [guest-squad]
+
