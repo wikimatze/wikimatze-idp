@@ -10,6 +10,7 @@ import { createFrontendModule } from '@backstage/frontend-plugin-api';
 
 import { techDocsReportIssueAddonModule } from '@backstage/plugin-techdocs-module-addons-contrib/alpha';
 
+import announcementsPlugin from '@backstage-community/plugin-announcements/alpha';
 
 const signInPage = SignInPageBlueprint.make({
   params: {
@@ -38,5 +39,6 @@ export default createApp({
       extensions: [signInPage],
     }),
     techDocsReportIssueAddonModule,
+    announcementsPlugin,
   ],
 });
