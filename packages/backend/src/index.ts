@@ -10,6 +10,8 @@ import { createBackend } from '@backstage/backend-defaults';
 
 const backend = createBackend();
 
+// announcements-plugin
+backend.add(import('@backstage-community/plugin-announcements-backend'));
 
 backend.add(import('@backstage/plugin-app-backend'));
 backend.add(import('@backstage/plugin-proxy-backend'));
