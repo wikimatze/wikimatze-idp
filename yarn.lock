@@ -1302,6 +1302,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@backstage-community/plugin-announcements-node@npm:^0.23.0":
+  version: 0.23.0
+  resolution: "@backstage-community/plugin-announcements-node@npm:0.23.0"
+  dependencies:
+    "@backstage-community/plugin-announcements-common": "npm:^0.25.0"
+    "@backstage/backend-plugin-api": "npm:^1.10.1"
+    "@backstage/errors": "npm:^1.3.1"
+  checksum: 10c0/66aafbd5d0dcad6cc8bda4ac006bc0be0aef52122f54b74ad96eace1a05f49f5c832ccb9981b168251fb012962a1adf9c1ec9ba33b1c427f0ce151a8d9f4ddab
+  languageName: node
+  linkType: hard
+
 "@backstage-community/plugin-announcements-react@npm:^0.30.0":
   version: 0.30.0
   resolution: "@backstage-community/plugin-announcements-react@npm:0.30.0"
@@ -1356,6 +1367,19 @@ __metadata:
     react-dom: ^17.0.0 || ^18.0.0
     react-router-dom: ^6.3.0
   checksum: 10c0/2303a3b0ff875d0c7323107193ebe0e7c7317e576d4b57d345df0d74b659a221176c859ff1ea9679691d37d57aae6c94cedc4b77c2b481f55317adc11d13941d
+  languageName: node
+  linkType: hard
+
+"@backstage-community/plugin-search-backend-module-announcements@npm:^0.23.0":
+  version: 0.23.0
+  resolution: "@backstage-community/plugin-search-backend-module-announcements@npm:0.23.0"
+  dependencies:
+    "@backstage-community/plugin-announcements-common": "npm:^0.25.0"
+    "@backstage-community/plugin-announcements-node": "npm:^0.23.0"
+    "@backstage/backend-plugin-api": "npm:^1.10.1"
+    "@backstage/plugin-search-backend-node": "npm:^1.4.8"
+    "@backstage/plugin-search-common": "npm:^1.2.25"
+  checksum: 10c0/966177988815b8ea0df9a5355c8210f382dbc040fcd9248f75a2fa9ef0d3fa74ac85dfb5d716ce5f285ec7e75647e3f9b6bdad92b29c224c640e55112fedda85
   languageName: node
   linkType: hard
 
@@ -3030,6 +3054,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@backstage/plugin-events-backend@npm:^0.6.7":
+  version: 0.6.7
+  resolution: "@backstage/plugin-events-backend@npm:0.6.7"
+  dependencies:
+    "@backstage/backend-openapi-utils": "npm:^0.7.3"
+    "@backstage/backend-plugin-api": "npm:^1.11.0"
+    "@backstage/config": "npm:^1.3.10"
+    "@backstage/errors": "npm:^1.3.2"
+    "@backstage/plugin-events-node": "npm:^0.4.27"
+    "@backstage/types": "npm:^1.2.2"
+    "@types/express": "npm:^4.17.6"
+    content-type: "npm:^1.0.5"
+    express: "npm:^4.22.0"
+    express-promise-router: "npm:^4.1.0"
+    knex: "npm:^3.0.0"
+  checksum: 10c0/09dc8229488b538d723cbde4999eee8c6f2fa5820868ae96f1b4bf8cb3af72d47292b4950feba6d8c230d4fc78353c927b789e23fa539333e5dcb60931cfca8d
+  languageName: node
+  linkType: hard
+
 "@backstage/plugin-events-node@npm:^0.4.26, @backstage/plugin-events-node@npm:^0.4.27":
   version: 0.4.27
   resolution: "@backstage/plugin-events-node@npm:0.4.27"
@@ -3776,7 +3819,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@backstage/plugin-search-backend-node@npm:^1.4.9":
+"@backstage/plugin-search-backend-node@npm:^1.4.8, @backstage/plugin-search-backend-node@npm:^1.4.9":
   version: 1.4.9
   resolution: "@backstage/plugin-search-backend-node@npm:1.4.9"
   dependencies:
@@ -13430,6 +13473,7 @@ __metadata:
   resolution: "backend@workspace:packages/backend"
   dependencies:
     "@backstage-community/plugin-announcements-backend": "npm:^0.30.0"
+    "@backstage-community/plugin-search-backend-module-announcements": "npm:^0.23.0"
     "@backstage/backend-defaults": "npm:^0.18.1"
     "@backstage/cli": "npm:^0.36.7"
     "@backstage/config": "npm:^1.3.10"
@@ -13441,6 +13485,7 @@ __metadata:
     "@backstage/plugin-catalog-backend": "npm:^4.0.1"
     "@backstage/plugin-catalog-backend-module-logs": "npm:^0.1.27"
     "@backstage/plugin-catalog-backend-module-scaffolder-entity-model": "npm:^0.2.25"
+    "@backstage/plugin-events-backend": "npm:^0.6.7"
     "@backstage/plugin-kubernetes-backend": "npm:^0.21.12"
     "@backstage/plugin-mcp-actions-backend": "npm:^0.2.3"
     "@backstage/plugin-notifications-backend": "npm:^0.6.10"
