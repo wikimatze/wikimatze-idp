@@ -27243,6 +27243,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root@workspace:."
   dependencies:
+    "@backstage-community/plugin-announcements-common": "npm:^0.25.0"
     "@backstage/cli": "npm:^0.36.7"
     "@backstage/cli-defaults": "npm:^0.1.7"
     "@backstage/e2e-test-utils": "npm:^0.1.2"

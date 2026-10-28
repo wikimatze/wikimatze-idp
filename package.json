@@ -63,5 +63,8 @@
       "prettier --write"
     ]
   },
-  "packageManager": "yarn@4.13.0"
+  "packageManager": "yarn@4.13.0",
+  "dependencies": {
+    "@backstage-community/plugin-announcements-common": "^0.25.0"
+  }
 }
