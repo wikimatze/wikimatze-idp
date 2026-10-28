@@ -8,6 +8,9 @@ import { SignInPageBlueprint } from '@backstage/plugin-app-react';
 import { SignInPage } from '@backstage/core-components';
 import { createFrontendModule } from '@backstage/frontend-plugin-api';
 
+import { techDocsReportIssueAddonModule } from '@backstage/plugin-techdocs-module-addons-contrib/alpha';
+
+
 const signInPage = SignInPageBlueprint.make({
   params: {
     loader: async () => props =>
@@ -34,5 +37,6 @@ export default createApp({
       pluginId: 'app',
       extensions: [signInPage],
     }),
+    techDocsReportIssueAddonModule,
   ],
 });
