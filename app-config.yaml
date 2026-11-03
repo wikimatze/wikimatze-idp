@@ -217,6 +217,12 @@ catalog:
       rules:
         - allow: [Template]
 
+    # my first template
+    - type: file
+      target: ../../template/template.yaml
+      rules:
+        - allow: [Template]
+
     # Local example organizational data
     - type: file
       target: ../../org-data.yaml
