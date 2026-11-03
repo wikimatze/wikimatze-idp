@@ -1,0 +1,26 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-template
+kind: Template
+metadata:
+  name: example-idp-template
+  title: My example IDP template
+  description: An example IDP template used to play around with that tool
+
+spec:
+  owner: guest-squad
+  type: service
+
+  # These parameters are used to generate the input form in the frontend, and are
+  # used to gather input data for the execution of the template.
+  parameters: []
+
+  # These steps are executed in the scaffolder backend, using data that we gathered
+  # via the parameters above.
+  steps: []
+    # Each step executes an action, in this case one templates files into the working directory.
+
+
+  # Outputs are displayed to the user after a successful execution of the template.
+  output:
+    links: []
+
