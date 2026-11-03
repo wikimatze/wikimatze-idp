@@ -12,6 +12,8 @@ import { techDocsReportIssueAddonModule } from '@backstage/plugin-techdocs-modul
 
 import techRadarPlugin from '@backstage-community/plugin-tech-radar/alpha';
 
+import githubActionsPlugin from '@backstage-community/plugin-github-actions/alpha';
+
 
 const signInPage = SignInPageBlueprint.make({
   params: {
