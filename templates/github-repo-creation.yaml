@@ -1,0 +1,23 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: create-github-repo
+  title: Create new github repo
+  description: Create a new GitHub repo!
+spec:
+  owner: guest-squad
+  type: service
+
+  # 1. Ask the User for Input
+  parameters:
+    - {}
+
+  # 2. Execute Automated Steps
+  steps:
+    - {}
+
+  # 3. Output the Result
+  output:
+    links: []
+
+

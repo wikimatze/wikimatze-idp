@@ -16,7 +16,7 @@ app:
 
     - page:tech-radar:
         config:
-           subtitle: 'Discoverr the technologies, frameworks and tools recommended for our engineering teams.'
+           subtitle: 'Discover the technologies, frameworks and tools recommended for our engineering teams.'
            pageTitle: 'Wikimatze Engineering Radar'
 
     # Visit tracking records which pages users navigate to and is disabled by default.
@@ -214,10 +214,7 @@ catalog:
     # Local example template
     - type: file
       target: ../../examples/template/template.yaml
-      rules:
         - allow: [Template]
-
-    - type: file
       target: ../../templates/github-repo-creation.yaml
       rules:
         - allow: [Template]
@@ -253,6 +250,7 @@ permission:
 mcpActions:
   name: 'My Company Backstage' # defaults to "backstage"
   description: 'Tools for managing your software catalog, creating new services from templates, and exploring your developer portal' # optional
+
 
 techRadar:
   url: https://github.com/backstage/community-plugins/blob/main/workspaces/tech-radar/plugins/tech-radar-common/src/sampleTechRadarResponse.json
