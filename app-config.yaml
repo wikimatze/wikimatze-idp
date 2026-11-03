@@ -217,6 +217,11 @@ catalog:
       rules:
         - allow: [Template]
 
+    - type: file
+      target: ../../templates/github-repo-creation.yaml
+      rules:
+        - allow: [Template]
+
     # Local example organizational data
     - type: file
       target: ../../org-data.yaml
